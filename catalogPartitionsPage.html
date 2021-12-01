@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>About</title>
 </head>
 <body>
@@ -34,10 +34,11 @@
                     <li><a href="#">Где купить</a></li>
                 </ul>
                 <ul class="navbar-link">
-                    <li class="uk-flex uk-flex-middle"><a href="tel:+78002506363">8 (800) 250-63-63</a></li>
-                    <li class="uk-flex uk-flex-middle"><a class="facebook-link" href="https://www.facebook.com/alveroofficial/"><img src="./assets/icons/social-icons/facebook.svg" alt="facebook-icon"></a></li>
-                    <li class="uk-flex uk-flex-middle"><a class="instagram-link" href="https://www.instagram.com/alvero_fabrica/"><img src="./assets/icons/social-icons/instagram.svg" alt=""></a></li>
-                    <li class="uk-flex uk-flex-middle"><a class="youtube-link" href="https://www.youtube.com/АльвероВипорте/"><img src="./assets/icons/social-icons/youtube.svg" alt=""></a></li>
+                    <li class="uk-flex uk-flex-middle link-m-size"><a href="tel:+78002506363">8 (800) 250-63-63</a></li>
+                    <li class="uk-flex uk-flex-middle link-m-size"><a class="facebook-link" href="https://www.facebook.com/alveroofficial/"><img src="./assets/icons/social-icons/facebook.svg" alt="facebook-icon"></a></li>
+                    <li class="uk-flex uk-flex-middle link-m-size"><a class="instagram-link" href="https://www.instagram.com/alvero_fabrica/"><img src="./assets/icons/social-icons/instagram.svg" alt=""></a></li>
+                    <li class="uk-flex uk-flex-middle link-m-size"><a class="youtube-link" href="https://www.youtube.com/АльвероВипорте/"><img src="./assets/icons/social-icons/youtube.svg" alt=""></a></li>
+                    <li class="uk-flex uk-flex-middle link-s-size"><a href="tel:+78002506363" class="class-tel-mob-link"><img src="./assets/icons/social-icons/phone-mob.svg" alt=""></a></li>
                     <li class="shop-cart uk-flex uk-flex-middle">
                         <a class="shop-cart-container">
                             <span class="shop-cart-img"><img src="./assets/icons/social-icons/shopping-cart.svg" alt=""></span>
@@ -50,11 +51,32 @@
                             <a class="RUS" href="#">Ru</a>
                         </div>
                     </li>
+                    <li class="mob-nav">
+                        <button class="mob-nav-button" uk-toggle="target: #main-mob-menu; cls: active-menu " ><span></span></button>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
 </div>
+        <div class="main-mob-menu" id="main-mob-menu">  
+    <ul class="uk-nav uk-nav-default main-mob-menu-body">
+        <li class="uk-parent">
+            <a href="#">Каталог </a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Двери</a></li>
+                <li><a href="#./catalogBoardPage.html">Полы</a></li>
+                <li><a href="#./catalogPartitionsPage.html">Перегородки</a></li>
+                <li><a href="#./catalogPanelsPage.html">Панели</a></li>
+            </ul>
+        </li>
+        <li><a href="#./aboutCompanyPage.html">О компании</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Где купить</a></li>
+    </ul>
+</div>
+
         <div class="catalogPartitions-about">
     <div class="uk-container">
         <div class="text-block">
@@ -306,6 +328,27 @@
             <a href="#ex-card-modal-window-3" uk-toggle><img src="./assets/icons/background/catalog/catalogPartitions/examples-card/imgs-3-sl-tmb.jpg" alt=""></a>
         </div>
     </div>
+    <div class="uk-position-relative uk-visible-toggle uk-dark mob-slider" tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <a href="#ex-card-modal-window-1" uk-toggle><img src="./assets/icons/background/catalog/catalogPartitions/examples-card/imgs-1-sl-tmb.jpg" alt=""></a>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <a href="#ex-card-modal-window-2" uk-toggle><img src="./assets/icons/background/catalog/catalogPartitions/examples-card/imgs-2-sl-tmb.jpg" alt=""></a>
+                </div>
+            </li>
+
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <a href="#ex-card-modal-window-3" uk-toggle><img src="./assets/icons/background/catalog/catalogPartitions/examples-card/imgs-3-sl-tmb.jpg" alt=""></a>
+                </div>
+            </li>
+        </ul>
+        <ul class="uk-slider-nav uk-dotnav"></ul>
+    </div>
     <div id="ex-card-modal-window-1" class="uk-flex-top" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
     
@@ -351,16 +394,32 @@
             <img src="./assets/icons/background/main-instagram/ins_2.jpg" alt="">
             <img src="./assets/icons/background/main-instagram/ins_3.jpg" alt="">
             <img src="./assets/icons/background/main-instagram/ins_4.jpg" alt="">
+            <img src="./assets/icons/background/main-instagram/inst_5.jpg" alt="" class="uk-hidden@m">
+            <img src="./assets/icons/background/main-instagram/inst_6.jpg" alt="" class="uk-hidden@m">
         </div>
     </div>
 </div>
         <a href="#main-header-nav" class="btn-to-up"></a>
         <footer class="main-footer">
-    <div class="uk-container">
+    <div class="uk-container desktop-footer">
         <div class="copyright">© <a href="#">Фабрика дверей «Альверо»</a>2021</div>
         <a href="https://drevesina.fordaq.com/fordaq/srvFordaqReport/Factory+Alvero+LLC_572380.html" class="certificat"><img src="./assets/icons/logo/Certified.png" alt=""></a>
         <a href="#" class="navigation">Салоны компании ALVERO</a>
         <a href="#" class="privacypolicy"> Политика конфиденциальности Вверх</a>
+    </div>
+    <div class="uk-container mobile-footer">
+        <div class="contact-block">
+            <div class="contacts">
+                <a href="tel:+78772555800" class="tel">+7 (8772) 555-800</a>
+                <a href="mailto:mail@alvero-dveri.ru" class="email">mail@alvero-dveri.ru</a>
+            </div>
+            <a href="#" class="navigation">Салоны компании ALVERO</a>
+        </div>
+        <a href="#" class="privacypolicy"> Политика конфиденциальности Вверх</a>
+        <div class="bottom-block">
+            <div class="copyright">© <a href="#">Фабрика дверей «Альверо»</a>2021</div>
+            <a href="https://drevesina.fordaq.com/fordaq/srvFordaqReport/Factory+Alvero+LLC_572380.html" class="certificat"><img src="./assets/icons/logo/Certified.png" alt=""></a>
+        </div>
     </div>
 </footer>
     </div>
